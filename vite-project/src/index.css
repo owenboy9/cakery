@@ -17,7 +17,7 @@ body {
   margin: 0;
   place-items: complete;
   width: 100%;
-  background-color: bisque;
+  background-color: rgba(245, 165, 90, 0.966);
 }
 
 h1 {
