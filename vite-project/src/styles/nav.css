@@ -1,5 +1,5 @@
 nav a {
-  color: white;
+  color: rgba(240, 19, 122, 0.5);
   text-decoration: none;
   margin-right: 5rem;
   font-weight: bold;
@@ -8,6 +8,6 @@ nav a {
 }
 
 nav a:hover {
-  color: bisque;
+  color: rgba(240, 121, 11, 0.5);
   cursor: pointer;
 }
