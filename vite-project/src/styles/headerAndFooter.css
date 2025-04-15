@@ -1,0 +1,13 @@
+.logo{
+  display: block;
+  margin: auto;
+  height: 13vh;
+  background-color: rgba(236, 233, 228, 0.781);
+  border-radius: 50px;
+  transition: background-color 1s;
+}
+
+.logo:hover {
+  background-color: rgba(0, 0, 0, 0.541);
+  cursor: pointer;
+}

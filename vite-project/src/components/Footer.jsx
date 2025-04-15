@@ -2,7 +2,7 @@
 function Footer() {
   return (
     <footer style={{ backgroundColor: '#f8c8dc', padding: '1rem', marginTop: '2rem' }}>
-      <p>© 2025 cute cakery</p>
+      <p style={{ color: 'white' }}>© 2025 cute cakery</p>
     </footer>
   );
 }
