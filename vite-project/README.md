@@ -9,30 +9,31 @@ cakery/
 ├── src/
 │   ├── assets/            # Images and static files (cake pics, icons, etc.)
 │   │   ├── cakes/
+|   |   |    |_8 different pics
+|   |   |    
 │   │   ├── cupcakes/
+|   |   |    |_8 different pics
+|   |   | 
 │   │   └── icons/         # e.g. social media icons if not using libraries
 │
 │   ├── components/        # Reusable UI components
 │   │   ├── Header.jsx
 │   │   ├── Footer.jsx
 │   │   ├── ProductCard.jsx
-│   │   └── Navigation.jsx (optional if separated from Header)
 │
 │   ├── pages/             # Route components
 │   │   ├── Home.jsx
 │   │   ├── About.jsx
-│   │   ├── Products/
-│   │   │   ├── Cupcakes.jsx
-│   │   │   ├── WeddingCakes.jsx
-│   │   │   └── index.jsx  # Optionally render both above in tabs or sections
+│   │   ├── Products.jsx
 │   │   └── Contact.jsx
 │
 │   ├── data/              # Optional: Static product data (JS objects or JSON)
-│   │   └── products.js
+│   │   └── products.json
 │
 │   ├── styles/            # Optional: centralize CSS or SCSS files
 │   │   ├── App.css
-│   │   └── components.css
+│   │   └── headerAndFooter.css
+│   │   └── productCard.css
 │
 │   ├── App.jsx            # Main app component
 │   ├── main.jsx           # Vite entry
@@ -40,4 +41,8 @@ cakery/
 │
 ├── index.html             # Entry point
 ├── package.json
+├── package-lock.json
+├── .gitignore
+├── README.md
+├── eslint.config.js
 └── vite.config.js
