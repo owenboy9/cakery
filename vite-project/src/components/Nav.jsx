@@ -1,12 +1,15 @@
-import { Link } from "react-router-dom"
+import { Link } from "react-router-dom";
+import '../styles/nav.css'
 
 function Nav() {
-  return <nav>
-    <Link to="/" style={{ color: 'white' }}>home</Link> &nbsp;
-    <Link to="/About" style={{ color: 'white' }}>about</Link> &nbsp;
-    <Link to="Products" style={{ color: 'white' }}>products</Link> &nbsp;
-    <Link to="Contact" style={{ color: 'white' }}>contact</Link>
-  </nav>
+  return (
+    <nav>
+      <Link to="/" >home</Link>
+      <Link to="/about">about</Link>
+      <Link to="/products" >products</Link>
+      <Link to="/contact" >contact</Link>
+    </nav>
+  );
 }
 
 export default Nav;
