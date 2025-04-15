@@ -3,7 +3,7 @@ function Header() {
   return (
     <header style={{ backgroundColor: '#f8c8dc', padding: '1rem' }}>
       <nav>
-        <a href="/">Home</a> | <a href="/about">About</a> | <a href="/products">Products</a> | <a href="/contact">Contact</a>
+        <a href="/">home</a> | <a href="/about">about</a> | <a href="/products">products</a> | <a href="/contact">contact</a>
       </nav>
     </header>
   );
