@@ -7,13 +7,13 @@ import LargeProductCard from '../components/LargeProductCard';
 
 function Products() {
   const [selectedProduct, setSelectedProduct] = useState(null);
+  const [filterType, setFilterType] = useState(null); // default filter
 
   const handleBuy = (productName, quantity) => {
     console.log(`added ${quantity} ${productName}(s) to cart`);
   };
 
   const handleImageClick = (product) => {
-    console.log("Image clicked", product); // Debugging line
     setSelectedProduct(product);
   };
 
@@ -21,13 +21,37 @@ function Products() {
     setSelectedProduct(null);
   };
 
-  const sortedProducts = [...products].sort((a, b) =>
-    a.name.localeCompare(b.name)
-  );
+  let displayedProducts;
+
+  if (filterType) {
+    displayedProducts = products
+      .filter((product) => product.type === filterType)
+      .sort((a, b) => a.name.localeCompare(b.name));
+  } else {
+    displayedProducts = [...products]; // all products, no sort
+  }
+
 
   return (
     <div className="products-container">
-      {sortedProducts.map((product) => (
+      {/* FILTER BUTTONS */}
+      <div className="filter-buttons">
+        <button
+          className={filterType === 'cupcake' ? 'active' : ''}
+          onClick={() => setFilterType('cupcake')}
+        >
+          Cupcakes
+        </button>
+        <button
+          className={filterType === 'wedding cake' ? 'active' : ''}
+          onClick={() => setFilterType('wedding cake')}
+        >
+          Wedding Cakes
+        </button>
+      </div>
+
+      {/* PRODUCT GRID */}
+      {displayedProducts.map((product) => (
         <ProductCard
           key={product.id}
           name={product.name}
@@ -38,6 +62,7 @@ function Products() {
         />
       ))}
 
+      {/* POPUP */}
       {selectedProduct && (
         <div className="popup-overlay" onClick={closePopup}>
           <div className="popup-content" onClick={(e) => e.stopPropagation()}>
@@ -48,7 +73,9 @@ function Products() {
               ingredients={selectedProduct.ingredients.join(', ')}
               description={selectedProduct.description}
               bestPairedWith={selectedProduct.bestPairedWith}
-              onClickBuy={(quantity) => handleBuy(selectedProduct.name, quantity)}
+              onClickBuy={(quantity) =>
+                handleBuy(selectedProduct.name, quantity)
+              }
               onClose={closePopup}
             />
           </div>
