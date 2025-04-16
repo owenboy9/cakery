@@ -1,20 +1,20 @@
 import strawberrySwirl from '../assets/cupcakes/Rainbow.jpg';
 import chocoDream from '../assets/cupcakes/purple.jpg';
-import lemonSunshine from '../assets/cupcakes/bloodorange.jpg';
+import lemonSunshine from '../assets/cupcakes/bloodorange.jpeg';
 import redVelvetBliss from '../assets/cupcakes/Butterfly.jpg';
-import caramelCrunch from '../assets/cupcakes/brown.jpg';
+import caramelCrunch from '../assets/cupcakes/brown.jpeg';
 import vanillaSparkle from '../assets/cupcakes/pink.jpg';
 import blueberryBurst from '../assets/cupcakes/blue.jpg';
 import matchaWhisper from '../assets/cupcakes/green.jpg';
 
-import rusticRose from '../assets/weddings/one.jpg';
-import classicPearl from '../assets/weddings/two.jpg';
-import lavenderDream from '../assets/weddings/three.jpg';
-import bohoBliss from '../assets/weddings/four.jpg';
-import goldenElegance from '../assets/weddings/five.jpg';
-import modernMarble from '../assets/weddings/six.jpg';
-import floralFantasy from '../assets/weddings/seven.jpg';
-import berryRomance from '../assets/weddings/eight.jpg';
+import rusticRose from '../assets/weddings/one.jpeg';
+import classicPearl from '../assets/weddings/two.jpeg';
+import lavenderDream from '../assets/weddings/three.jpeg';
+import bohoBliss from '../assets/weddings/four.jpeg';
+import goldenElegance from '../assets/weddings/five.jpeg';
+import modernMarble from '../assets/weddings/six.jpeg';
+import floralFantasy from '../assets/weddings/seven.jpeg';
+import berryRomance from '../assets/weddings/eight.jpeg';
 
 const products = [
   // cupcakes
