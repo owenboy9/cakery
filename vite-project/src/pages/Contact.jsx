@@ -1,4 +1,8 @@
 // src/pages/Home.jsx
+import text from '../data/text';
+
+<p>{text.home.intro}</p>
+
 function Contact() {
   return (
     <div style={ {backgroundColor: 'lightpink', padding: '2rem'}} >
