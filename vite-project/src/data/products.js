@@ -99,10 +99,10 @@ const products = [
     image: strawberrySwirl
   },
 
-  // wedding cakes
+  // wedding-cakes
   {
     id: 9,
-    type: "wedding cake",
+    type: "wedding-cake",
     name: "classic white",
     price: "$150",
     ingredients: ["vanilla sponge", "buttercream", "fondant"],
@@ -112,7 +112,7 @@ const products = [
   },
   {
     id: 10,
-    type: "wedding cake",
+    type: "wedding-cake",
     name: "roses & cream",
     price: "$175",
     ingredients: ["rosewater", "vanilla", "silky cream"],
@@ -122,7 +122,7 @@ const products = [
   },
   {
     id: 11,
-    type: "wedding cake",
+    type: "wedding-cake",
     name: "chocolate couture",
     price: "$180",
     ingredients: ["dark chocolate", "ganache", "raspberry"],
@@ -132,7 +132,7 @@ const products = [
   },
   {
     id: 12,
-    type: "wedding cake",
+    type: "wedding-cake",
     name: "lavender dream",
     price: "$165",
     ingredients: ["lavender", "honey", "buttercream"],
@@ -142,7 +142,7 @@ const products = [
   },
   {
     id: 13,
-    type: "wedding cake",
+    type: "wedding-cake",
     name: "rustic berry",
     price: "$160",
     ingredients: ["mixed berries", "vanilla", "cream cheese frosting"],
@@ -152,7 +152,7 @@ const products = [
   },
   {
     id: 14,
-    type: "wedding cake",
+    type: "wedding-cake",
     name: "golden fig",
     price: "$185",
     ingredients: ["fig", "honey", "almond cake"],
@@ -162,7 +162,7 @@ const products = [
   },
   {
     id: 15,
-    type: "wedding cake",
+    type: "wedding-cake",
     name: "mocha marble",
     price: "$170",
     ingredients: ["coffee", "chocolate", "cream"],
@@ -172,7 +172,7 @@ const products = [
   },
   {
     id: 16,
-    type: "wedding cake",
+    type: "wedding-cake",
     name: "peach & prosecco",
     price: "$175",
     ingredients: ["peach", "prosecco glaze", "vanilla cake"],

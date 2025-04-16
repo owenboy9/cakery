@@ -54,3 +54,30 @@
     scrollbar-width: thin;
   scrollbar-color: rgba(255, 192, 203, 0.3) transparent; 
 }
+
+.filter-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  margin-bottom: 2rem;
+}
+
+.filter-buttons button {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 25px;
+  font-weight: bold;
+  background-color: #ffccdd;
+  color: #333;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.filter-buttons button.active {
+  background-color: #ff6f91;
+  color: white;
+}
+
+.filter-buttons button:hover {
+  background-color: #ffa6c1;
+}

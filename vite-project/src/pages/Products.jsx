@@ -28,59 +28,67 @@ function Products() {
       .filter((product) => product.type === filterType)
       .sort((a, b) => a.name.localeCompare(b.name));
   } else {
-    displayedProducts = [...products]; // all products, no sort
+    displayedProducts = products.sort((a, b) => a.name.localeCompare(b.name)); // all products, no sort
   }
 
 
   return (
-    <div className="products-container">
+    <div className="products-page">
       {/* FILTER BUTTONS */}
       <div className="filter-buttons">
         <button
           className={filterType === 'cupcake' ? 'active' : ''}
           onClick={() => setFilterType('cupcake')}
         >
-          Cupcakes
+          cupcakes
         </button>
         <button
-          className={filterType === 'wedding cake' ? 'active' : ''}
-          onClick={() => setFilterType('wedding cake')}
+          className={filterType === 'wedding-cake' ? 'active' : ''}
+          onClick={() => setFilterType('wedding-cake')}
         >
-          Wedding Cakes
+          wedding cakes
+        </button>
+        <button
+          className={filterType === '' ? 'active' : ''}
+          onClick={() => setFilterType('')}
+        >
+          all together
         </button>
       </div>
 
-      {/* PRODUCT GRID */}
-      {displayedProducts.map((product) => (
-        <ProductCard
-          key={product.id}
-          name={product.name}
-          image={product.image}
-          price={product.price}
-          onBuyClick={() => handleBuy(product.name, 1)}
-          onImageClick={() => handleImageClick(product)}
-        />
-      ))}
+      <div className="products-container">
+        {/* PRODUCT GRID */}
+        {displayedProducts.map((product) => (
+          <ProductCard
+            key={product.id}
+            name={product.name}
+            image={product.image}
+            price={product.price}
+            onBuyClick={() => handleBuy(product.name, 1)}
+            onImageClick={() => handleImageClick(product)}
+          />
+        ))}
 
-      {/* POPUP */}
-      {selectedProduct && (
-        <div className="popup-overlay" onClick={closePopup}>
-          <div className="popup-content" onClick={(e) => e.stopPropagation()}>
-            <LargeProductCard
-              name={selectedProduct.name}
-              image={selectedProduct.image}
-              price={selectedProduct.price}
-              ingredients={selectedProduct.ingredients.join(', ')}
-              description={selectedProduct.description}
-              bestPairedWith={selectedProduct.bestPairedWith}
-              onClickBuy={(quantity) =>
-                handleBuy(selectedProduct.name, quantity)
-              }
-              onClose={closePopup}
-            />
+        {/* POPUP */}
+        {selectedProduct && (
+          <div className="popup-overlay" onClick={closePopup}>
+            <div className="popup-content" onClick={(e) => e.stopPropagation()}>
+              <LargeProductCard
+                name={selectedProduct.name}
+                image={selectedProduct.image}
+                price={selectedProduct.price}
+                ingredients={selectedProduct.ingredients.join(', ')}
+                description={selectedProduct.description}
+                bestPairedWith={selectedProduct.bestPairedWith}
+                onClickBuy={(quantity) =>
+                  handleBuy(selectedProduct.name, quantity)
+                }
+                onClose={closePopup}
+              />
+            </div>
           </div>
-        </div>
-      )}
+        )}
+      </div>
     </div>
   );
 }
