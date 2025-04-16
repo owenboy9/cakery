@@ -6,8 +6,10 @@ import text from '../data/text';
 function Home() {
   return (
     <div style={{ backgroundColor: 'lightpink', padding: '2rem' }}>
-      <h1>welcome to cute cakery!</h1>
-      <p>sweet treats for sweet peas</p>
+      <h1>{text.home.headline}</h1>
+      <h2>{text.home.subheadline}</h2>
+      <p>{text.home.content}</p>
+      <span>{text.home.cta}</span>
     </div>
   )
 }

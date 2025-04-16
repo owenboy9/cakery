@@ -2,10 +2,10 @@ const text = {
   home: {
     headline: 'welcome to sweet shop',
     subheadline: 'handmade cupcakes and wedding cakes, baked with love',
-    intro: `whether you're celebrating something big or just craving something sweet, 
+    content: `whether you're celebrating something big or just craving something sweet, 
     sweet shop has a treat for you. browse our collection of colorful cupcakes or 
     dreamy wedding cakes and find your next favorite flavor.`,
-    cta: 'explore our treats',
+    cta: 'sweet treats for sweet peas',
   },
 
   about: {

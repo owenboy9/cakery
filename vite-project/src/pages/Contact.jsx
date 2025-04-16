@@ -6,8 +6,9 @@ import text from '../data/text';
 function Contact() {
   return (
     <div style={ {backgroundColor: 'lightpink', padding: '2rem'}} >
-      <h1>here's how you can get in touch</h1>
-      <p>come by!</p>
+      <h1>{text.contact.title}</h1>
+      <p>{text.contact.message}</p>
+      <span>{text.contact.location}</span>
     </div>
   )
 }
