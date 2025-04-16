@@ -1,4 +1,5 @@
-// src/pages/Products.jsx
+import '../styles/products.css';
+
 import products from '../data/products'; // adjust path if needed
 import ProductCard from '../components/ProductCard';
 
@@ -12,13 +13,7 @@ function Products() {
   );
 
   return (
-    <div style={{
-      display: 'flex',
-      flexWrap: 'wrap',
-      justifyContent: 'center',
-      padding: '2rem',
-      backgroundColor: 'lightpink',
-    }}>
+    <div className="products-container">
       {sortedProducts.map((product) => (
         <ProductCard
           key={product.id}
