@@ -23,6 +23,23 @@
   backdrop-filter: blur(5px);
   padding: 4rem; /* Add padding to give breathing room */
   box-sizing: border-box; /* Ensure padding doesn't cause overflow */
+  scroll-behavior: smooth; /* Smooth scrolling for the overlay */
+  overflow-y: visible; /* Allow scrolling if content overflows */
+}
+
+.popup-content::-webkit-scrollbar {
+  width: 8px;
+}
+
+.popup-content::-webkit-scrollbar-track {
+  background: transparent;
+  border-radius: 10px;
+}
+
+.popup-content::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 192, 203, 0.3); /* light transparent pink */
+  border-radius: 10px;
+  border: 2px solid transparent; /* space inside thumb */
 }
 
 .popup-content {
@@ -33,5 +50,7 @@
   max-height: 100%; /* Ensure it fits within viewport */
   overflow-y: auto;
   padding: 2rem;
+  overflow-x: hidden; /* Prevent horizontal overflow */
+    scrollbar-width: thin;
+  scrollbar-color: rgba(255, 192, 203, 0.3) transparent; 
 }
-
