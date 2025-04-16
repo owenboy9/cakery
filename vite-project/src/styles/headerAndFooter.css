@@ -1,6 +1,7 @@
 .logo{
   display: block;
   margin: auto;
+  margin-top: 1.6rem;
   height: 13vh;
   border-radius: 50px;
   transition: background-color 1s;
@@ -14,8 +15,8 @@
 
 .header-container {
   width: 100%;
-  padding: 3vw;
   display: flexbox;
+  padding: 0;
 }
 
 footer {

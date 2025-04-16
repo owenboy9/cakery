@@ -64,15 +64,6 @@
   border-radius: 0.4rem;
 }
 
-.quantity-input{
-  border: none;
-  color:blanchedalmond;
-  padding: 0.5rem 1rem 0.5rem 1rem;
-  border-radius: 0.4rem;
-  text-align: center;
-  background-color: rgb(187, 100, 60);
-}
-
 .ingredients-highlight {
   font-weight: bold;
   font-size: 1.1rem; /* or larger if you want */

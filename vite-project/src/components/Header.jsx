@@ -1,5 +1,4 @@
 // src/components/Header.jsx
-import backgroundImage from '../assets/background.jpg';
 
 import Nav from './Nav.jsx'
 import logo from '../assets/logo.jpg'
