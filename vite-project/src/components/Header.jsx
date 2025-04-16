@@ -8,7 +8,7 @@ function Header() {
     <header style={{ backgroundColor: '#f8c8dc', padding: '1rem'}}>
     <div className='header-container'>
       <a href="/">
-        <div classname='logo-container'>
+        <div className='logo-container'>
           <img className='logo' src={logo}/>
         </div>
       </a>

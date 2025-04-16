@@ -24,7 +24,7 @@ const products = [
     name: "vanilla bliss",
     price: "$3.50",
     ingredients: ["vanilla", "buttercream", "sprinkles"],
-    description: "a classic vanilla cupcake topped with creamy buttercream and rainbow sprinkles.",
+    description: "a classic vanilla cupcake topped with creamy buttercream and rainbow sprinkles",
     bestPairedWith: "chamomile tea",
     image: vanillaSparkle
   },
@@ -34,7 +34,7 @@ const products = [
     name: "choco lava",
     price: "$4.00",
     ingredients: ["dark chocolate", "ganache", "cocoa nibs"],
-    description: "rich chocolate cupcake with a gooey molten center and crunchy cocoa nibs.",
+    description: "rich chocolate cupcake with a gooey molten center and crunchy cocoa nibs",
     bestPairedWith: "espresso",
     image: chocoDream
   },
@@ -44,7 +44,7 @@ const products = [
     name: "strawberry fields",
     price: "$3.75",
     ingredients: ["strawberries", "whipped cream", "vanilla cake"],
-    description: "light and fruity cupcake layered with fresh strawberries and whipped cream.",
+    description: "light and fruity cupcake layered with fresh strawberries and whipped cream",
     bestPairedWith: "rosé",
     image: redVelvetBliss
   },
@@ -54,7 +54,7 @@ const products = [
     name: "lemon zinger",
     price: "$3.50",
     ingredients: ["lemon zest", "lemon curd", "sugar glaze"],
-    description: "zesty lemon cupcake filled with curd and topped with a sweet glaze.",
+    description: "zesty lemon cupcake filled with curd and topped with a sweet glaze",
     bestPairedWith: "green tea",
     image: lemonSunshine
   },
@@ -64,7 +64,7 @@ const products = [
     name: "matcha magic",
     price: "$4.25",
     ingredients: ["matcha", "white chocolate", "cream cheese frosting"],
-    description: "earthy matcha meets sweet white chocolate in this frosted beauty.",
+    description: "earthy matcha meets sweet white chocolate in this frosted beauty",
     bestPairedWith: "jasmine tea",
     image: matchaWhisper
   },
@@ -74,7 +74,7 @@ const products = [
     name: "blueberry muffinette",
     price: "$3.25",
     ingredients: ["blueberries", "vanilla base", "streusel"],
-    description: "like your favorite muffin, but better — with a cupcake twist and streusel top.",
+    description: "like your favorite muffin, but better — with a cupcake twist and streusel top",
     bestPairedWith: "latte",
     image: blueberryBurst
   },
@@ -84,7 +84,7 @@ const products = [
     name: "salted caramel crunch",
     price: "$4.00",
     ingredients: ["caramel", "sea salt", "crunch pearls"],
-    description: "salty-sweet perfection with a gooey caramel center and a crunch on top.",
+    description: "salty-sweet perfection with a gooey caramel center and a crunch on top",
     bestPairedWith: "cold brew",
     image: caramelCrunch
   },
@@ -94,7 +94,7 @@ const products = [
     name: "coconut cloud",
     price: "$3.75",
     ingredients: ["coconut cream", "vanilla", "toasted coconut"],
-    description: "fluffy coconut cream and toasted flakes over a vanilla cupcake base.",
+    description: "fluffy coconut cream and toasted flakes over a vanilla cupcake base",
     bestPairedWith: "piña colada",
     image: strawberrySwirl
   },
@@ -106,7 +106,7 @@ const products = [
     name: "classic white",
     price: "$150",
     ingredients: ["vanilla sponge", "buttercream", "fondant"],
-    description: "timeless elegance with delicate buttercream layers and smooth fondant.",
+    description: "timeless elegance with delicate buttercream layers and smooth fondant",
     bestPairedWith: "champagne",
     image: rusticRose
   },
@@ -116,7 +116,7 @@ const products = [
     name: "roses & cream",
     price: "$175",
     ingredients: ["rosewater", "vanilla", "silky cream"],
-    description: "romantic rose-infused cake layered with silky smooth vanilla cream.",
+    description: "romantic rose-infused cake layered with silky smooth vanilla cream",
     bestPairedWith: "sparkling rosé",
     image: classicPearl
   },
@@ -126,7 +126,7 @@ const products = [
     name: "chocolate couture",
     price: "$180",
     ingredients: ["dark chocolate", "ganache", "raspberry"],
-    description: "deep chocolate layers wrapped in ganache, topped with fresh raspberries.",
+    description: "deep chocolate layers wrapped in ganache, topped with fresh raspberries",
     bestPairedWith: "port wine",
     image: bohoBliss
   },
@@ -136,7 +136,7 @@ const products = [
     name: "lavender dream",
     price: "$165",
     ingredients: ["lavender", "honey", "buttercream"],
-    description: "whimsical cake with floral lavender notes and sweet honey layers.",
+    description: "whimsical cake with floral lavender notes and sweet honey layers",
     bestPairedWith: "earl grey tea",
     image: lavenderDream
   },
@@ -146,7 +146,7 @@ const products = [
     name: "rustic berry",
     price: "$160",
     ingredients: ["mixed berries", "vanilla", "cream cheese frosting"],
-    description: "semi-naked cake adorned with fresh seasonal berries and rustic charm.",
+    description: "semi-naked cake adorned with fresh seasonal berries and rustic charm",
     bestPairedWith: "prosecco",
     image: berryRomance
   },
@@ -156,7 +156,7 @@ const products = [
     name: "golden fig",
     price: "$185",
     ingredients: ["fig", "honey", "almond cake"],
-    description: "gold-dusted figs atop moist almond cake with a drizzle of honey.",
+    description: "gold-dusted figs atop moist almond cake with a drizzle of honey",
     bestPairedWith: "sauternes",
     image: floralFantasy
   },
@@ -166,7 +166,7 @@ const products = [
     name: "mocha marble",
     price: "$170",
     ingredients: ["coffee", "chocolate", "cream"],
-    description: "swirls of mocha in every layer with a silky coffee cream finish.",
+    description: "swirls of mocha in every layer with a silky coffee cream finish",
     bestPairedWith: "irish coffee",
     image: modernMarble
   },
@@ -176,7 +176,7 @@ const products = [
     name: "peach & prosecco",
     price: "$175",
     ingredients: ["peach", "prosecco glaze", "vanilla cake"],
-    description: "sweet peach layers with a bubbly prosecco glaze — light and luxe.",
+    description: "sweet peach layers with a bubbly prosecco glaze — light and luxe",
     bestPairedWith: "bellini",
     image: goldenElegance
   },

@@ -1,10 +1,10 @@
 .large-product-card {
-  width: 900px;
-  background-color: rgba(245, 227, 237, 0.37);
+  width: 500px;
   border-radius: 0.5rem;
   overflow: hidden;
-  box-shadow: 0px 0px 10px rgba(236, 164, 97, 0.87);
+  box-shadow: 0px 0px 10px rgb(236, 164, 97);
   padding: 2rem;
+  padding-bottom: 1rem;
   text-align: center;
   margin: 1rem;
   font-family: sans-serif;
@@ -13,7 +13,6 @@
 .large-product-image {
   width: 100%;
   object-fit: cover;
-  cursor: pointer;
   border-radius: 0.5rem;
 }
 
@@ -24,27 +23,27 @@
 .large-product-name {
   font-size: 1.5rem;
   margin: 0.5rem 0;
-  color: black;
+  color: blanchedalmond;
 }
 
 .large-product-price {
   font-weight: bold;
-  color: black;
   margin: 0.6rem 0;
 }
 
 .large-product-content p{
-  color: rgba(245, 227, 237, 0.37);
+  color: blanchedalmond;
 }
 
 .large-product-buy-button {
-  background-color: lightpink;
-  border: none;
+  background-color: rgba(241, 177, 187, 0.404);
+  border: 4px dotted hotpink;
   padding: 0.5rem 1rem;
-  border-radius: 0.5rem;
+  border-radius: 0.4rem;
   cursor: pointer;
   font-weight: bold;
   margin-top: 0.5rem;
+  color: blanchedalmond;
   transition: transform 0.1s ease, box-shadow 0.3s ease;
 }
 
@@ -53,10 +52,27 @@
   box-shadow: 0 0 10px rgb(240, 99, 141);
 }
 
-.large-product-input{
+.large-product-input {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 0.5rem;
+  margin-bottom: 0;;
+  border: 0.1rem solid rgba(240, 19, 122, 0.5);
+  padding-bottom: 1rem;
+  border-radius: 0.4rem;
+}
+
+.quantity-input{
   border: none;
-  background-color: rosybrown;
   color:blanchedalmond;
-  box-shadow:  0px 0px 10px;
-  box-shadow:  0px 0px 10px darksalmon;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  border-radius: 0.4rem;
+  text-align: center;
+  background-color: rgb(187, 100, 60);
+}
+
+.ingredients-highlight {
+  font-weight: bold;
+  font-size: 1.1rem; /* or larger if you want */
 }
