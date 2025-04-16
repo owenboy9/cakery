@@ -2,7 +2,7 @@ import strawberrySwirl from '../assets/cupcakes/Rainbow.jpg';
 import chocoDream from '../assets/cupcakes/purple.jpg';
 import lemonSunshine from '../assets/cupcakes/bloodorange.jpeg';
 import redVelvetBliss from '../assets/cupcakes/Butterfly.jpg';
-import caramelCrunch from '../assets/cupcakes/brown.jpeg';
+import caramelCrunch from '../assets/cupcakes/caramel.jpg';
 import vanillaSparkle from '../assets/cupcakes/pink.jpg';
 import blueberryBurst from '../assets/cupcakes/blue.jpg';
 import matchaWhisper from '../assets/cupcakes/green.jpg';

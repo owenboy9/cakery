@@ -9,7 +9,6 @@ function LargeProductCard({
   description,
   bestPairedWith,
   onClickBuy,
-  onClose
 }) {
   const [quantity, setQuantity] = useState('');
 
@@ -20,10 +19,6 @@ function LargeProductCard({
 
   return (
     <div className='large-product-card'>
-      <button className="close-button" 
-      onClick={onClose}>
-        ×
-        </button>
       <img 
         src={image} 
         alt={name} 

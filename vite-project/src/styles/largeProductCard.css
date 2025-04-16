@@ -14,6 +14,7 @@
   width: 100%;
   object-fit: cover;
   border-radius: 0.5rem;
+  display: block;
 }
 
 .large-product-content {
@@ -86,21 +87,4 @@
   background-color: rgb(187, 100, 60);
   font-size: 1rem;
   outline: none;
-}
-
-.close-button {
-  position: center;
-  background: transparent;
-  font-size: 1.5rem;
-  border: none;
-  font-weight: bold;
-  color: blanchedalmond;
-  cursor: pointer;
-  transition: transform 0.2s ease;
-  z-index: 10;
-}
-
-.close-button:hover {
-  transform: scale(1.2);
-  color: hotpink;
 }
