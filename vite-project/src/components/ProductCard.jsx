@@ -1,4 +1,4 @@
-// src/components/ProductCard.jsx
+import '../styles/productCard.css'
 function ProductCard({ name, image, price, onBuyClick }) {
   return (
     <div style={{
@@ -16,6 +16,7 @@ function ProductCard({ name, image, price, onBuyClick }) {
       <img
         src={image}
         alt={name}
+        className="product-image"
         style={{ width: '100%', objectFit: 'cover', cursor: 'pointer', borderRadius: '0.5rem' }}
       />
       <div style={{ padding: '0.3rem' }}>
@@ -23,7 +24,8 @@ function ProductCard({ name, image, price, onBuyClick }) {
           {name}
         </h3>
         <p style={{ fontWeight: 'bold', color: 'black', margin: '0.6rem 0' }}>{price}</p>
-        <button
+        <button 
+          className="buy-button"
           onClick={onBuyClick}
           style={{
             backgroundColor: 'lightpink',
