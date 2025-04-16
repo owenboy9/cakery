@@ -6,8 +6,7 @@ import '../styles/headerAndFooter.css'
 
 function Header() {
   return (
-    <header style={{ backgroundColor: '#f8c8dc', 
-    padding: '1rem'}}>
+    <header>
     <div className='header-container'>
       <a href="/">
         <div className='logo-container'>
