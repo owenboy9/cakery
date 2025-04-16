@@ -9,25 +9,29 @@
   width: 100%;
 }
 
-/* in products.css */
 .popup-overlay {
+  position: fixed;
   top: 0;
   left: 0;
-  width: 20vw;
+  width: 100vw;
   height: 100vh;
-  background: rgba(255, 192, 203, 0.5); /* light pink overlay */
+  background: rgba(253, 223, 189, 0.5); /* light pink overlay */
   display: flex;
   justify-content: center;
   align-items: center;
   z-index: 999;
   backdrop-filter: blur(5px);
+  padding: 4rem; /* Add padding to give breathing room */
+  box-sizing: border-box; /* Ensure padding doesn't cause overflow */
 }
 
 .popup-content {
   background: rgb(197, 36, 98);
   border-radius: 1rem;
   box-shadow: 0 0 20px rgba(214, 97, 132, 0.8);
-  padding: 0;
   border: 4px dotted hotpink;
-
+  max-height: 100%; /* Ensure it fits within viewport */
+  overflow-y: auto;
+  padding: 2rem;
 }
+

@@ -76,3 +76,31 @@
   font-weight: bold;
   font-size: 1.1rem; /* or larger if you want */
 }
+
+.quantity-input {
+  border: none;
+  color: blanchedalmond;
+  padding: 0.5rem 1rem;
+  border-radius: 0.4rem;
+  text-align: center;
+  background-color: rgb(187, 100, 60);
+  font-size: 1rem;
+  outline: none;
+}
+
+.close-button {
+  position: center;
+  background: transparent;
+  font-size: 1.5rem;
+  border: none;
+  font-weight: bold;
+  color: blanchedalmond;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  z-index: 10;
+}
+
+.close-button:hover {
+  transform: scale(1.2);
+  color: hotpink;
+}

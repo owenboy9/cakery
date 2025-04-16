@@ -8,16 +8,22 @@ function LargeProductCard({
   ingredients,
   description,
   bestPairedWith,
-  onClickBuy
+  onClickBuy,
+  onClose
 }) {
-  const [quantity, setQuantity] = useState(1);
+  const [quantity, setQuantity] = useState('');
 
   const handleBuyClick = () => {
-    onClickBuy(quantity);
+    const finalQuantity = Number(quantity) || 1;
+    onClickBuy(finalQuantity);
   };
 
   return (
     <div className='large-product-card'>
+      <button className="close-button" 
+      onClick={onClose}>
+        ×
+        </button>
       <img 
         src={image} 
         alt={name} 
@@ -33,15 +39,18 @@ function LargeProductCard({
           <br />are what makes this one unique
         </p>
         
-        <p className='large-product-best-paired'>best paired with: {bestPairedWith}</p>
+        <p className='large-product-best-paired'>best paired with {bestPairedWith}</p>
 
         <div className='large-product-input'>
           <p className='large-product-question'>how many of those would you like?</p>
           <input
-            type="number"
+            type="text"
             min="1"
             value={quantity}
-            onChange={(e) => setQuantity(Number(e.target.value))}
+            onChange={(e) => {
+              const val = e.target.value;
+              if (/^\d*$/.test(val)) setQuantity(val); // allow only digits
+            }}
             placeholder='??'
             className="quantity-input"
           />

@@ -49,6 +49,7 @@ function Products() {
               description={selectedProduct.description}
               bestPairedWith={selectedProduct.bestPairedWith}
               onClickBuy={(quantity) => handleBuy(selectedProduct.name, quantity)}
+              onClose={closePopup}
             />
           </div>
         </div>
