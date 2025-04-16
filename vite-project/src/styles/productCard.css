@@ -8,6 +8,9 @@
   text-align: center;
   margin: 1rem;
   font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .product-image {
@@ -25,18 +28,21 @@
 
 .product-content {
   padding: 0.3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .product-name {
   font-size: 1.5rem;
   margin: 0.5rem 0;
-  color: black;
+  color:rgba(99, 49, 2, 0.966);
 }
 
 .product-price {
   font-weight: bold;
-  color: black;
-  margin: 0.6rem 0;
+  color: rgba(99, 49, 2, 0.966);
+  text-align: center;
 }
 
 .buy-button {
@@ -48,6 +54,7 @@
   font-weight: bold;
   margin-top: 0.5rem;
   transition: transform 0.1s ease, box-shadow 0.3s ease;
+  color: rgba(99, 49, 2, 0.966);
 }
 
 .buy-button:hover {

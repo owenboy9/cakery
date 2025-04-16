@@ -16,7 +16,7 @@ header {
   background-color: #f8c8dc;
   padding-top: 0.1rem;
   margin-bottom: 0.5rem;
-
+  border: 4px dotted rgb(250, 129, 189);;
 }
 
 
@@ -27,7 +27,6 @@ header {
 }
 
 .footer {
-  width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -35,6 +34,7 @@ header {
   background-color: #f8c8dc;
   padding: 1rem;
   margin-top: 0.5rem;
+  border: 4px dotted rgb(250, 129, 189);
 } 
 
 .footer > p{

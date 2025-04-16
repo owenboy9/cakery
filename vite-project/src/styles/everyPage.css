@@ -1,0 +1,17 @@
+.every-page-container{
+  background-color: lightpink;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  padding-left: 10rem; 
+  padding-right: 10rem;
+  padding-bottom: 3rem;
+  border: 4px dotted rgb(250, 129, 189);
+  color: blanchedalmond
+}
+
+p{
+  text-align: center;
+  width: 70%;
+}

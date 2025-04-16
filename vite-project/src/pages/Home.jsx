@@ -1,11 +1,12 @@
 // src/pages/Home.jsx
 import text from '../data/text';
+import '../styles/everyPage.css';
 
 <p>{text.home.intro}</p>
 
 function Home() {
   return (
-    <div style={{ backgroundColor: 'lightpink', padding: '2rem' }}>
+    <div className="every-page-container">
       <h1>{text.home.headline}</h1>
       <h2>{text.home.subheadline}</h2>
       <p>{text.home.content}</p>

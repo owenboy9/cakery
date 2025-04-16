@@ -82,3 +82,7 @@
   transform: scale(1.07);
   box-shadow: 0 0 10px rgb(240, 99, 141);
 }
+
+.products-page{
+  border: 4px dotted rgb(250, 129, 189);
+  }
