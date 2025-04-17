@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+CU:wght@100..400&display=swap');
+
 .product-card {
   width: 220px;
   background-color: rgba(245, 227, 237, 0.37);
@@ -7,7 +9,7 @@
   padding: 1rem;
   text-align: center;
   margin: 1rem;
-  font-family: sans-serif;
+  font-family: "Playwrite CU", cursive;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -34,7 +36,7 @@
 }
 
 .product-name {
-  font-size: 1.5rem;
+  font-weight: bold;
   margin: 0.5rem 0;
   color:rgba(99, 49, 2, 0.966);
 }
@@ -43,18 +45,21 @@
   font-weight: bold;
   color: rgba(99, 49, 2, 0.966);
   text-align: center;
+  font-size: 0.7rem;
 }
 
 .buy-button {
   background-color: lightpink;
   border: none;
-  padding: 0.5rem 1rem;
+  padding: 0.16rem 0.6rem;
   border-radius: 0.5rem;
   cursor: pointer;
   font-weight: bold;
   margin-top: 0.5rem;
   transition: transform 0.1s ease, box-shadow 0.3s ease;
   color: rgba(99, 49, 2, 0.966);
+  font-family: inherit;
+  border: 4px dotted hotpink;
 }
 
 .buy-button:hover {
