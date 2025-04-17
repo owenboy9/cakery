@@ -44,11 +44,10 @@ p{
 }
 
 .message {
-  height: 6rem;
-  resize: vertical;
   text-align: center;         /* center horizontally */
   padding-top: 4rem;          /* center vertically by pushing down */
   font-family: inherit;
+  height: 12rem;
 }
 
 .message::placeholder, .email::placeholder, .name::placeholder{
@@ -56,10 +55,9 @@ p{
 }
 
 .thank-you-style{
-  font-size: 1.5rem;
+  font-size: 1.1rem;
   color: rgb(250, 143, 161);
   font-weight: bold;
-  margin-top: 1rem;
   text-align: center;
 }
 
