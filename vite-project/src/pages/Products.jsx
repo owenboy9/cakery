@@ -12,11 +12,7 @@ function Products() {
   const { addToCart } = useCart();
 
   const handleBuy = (product, quantity) => {
-    addToCart({
-      name: product.name,
-      price: product.price,
-      quantity: quantity,
-    });
+    addToCart(product, quantity);
     console.log(`added ${quantity} ${product.name}(s) to cart`);
   };
 
@@ -83,8 +79,8 @@ function Products() {
                 ingredients={selectedProduct.ingredients.join(', ')}
                 description={selectedProduct.description}
                 bestPairedWith={selectedProduct.bestPairedWith}
-                onClickBuy={(quantity) =>
-                  handleBuy(selectedProduct, quantity)
+                onClickBuy={(product, quantity) =>
+                  handleBuy(product, quantity)
                 }
                 onClose={closePopup}
               />

@@ -38,13 +38,18 @@
 .cart-list {
   list-style: none;
   padding: 0;
+  border-bottom: 0.1rem solid blanchedalmond;
+  min-width: 40rem;
+}
+
+.cart-list> :last-child{
+  margin-bottom: 2rem;;
 }
 
 .cart-item {
   display: flex;
   justify-content: space-between;
   margin-bottom: 1rem;
-  border-bottom: 1px solid #ddd;
   padding-bottom: 0.5rem;
 }
 
@@ -55,19 +60,21 @@
 }
 
 .clear-cart-btn {
-  background-color: lightpink;
-  padding-bottom: 0.5rem;
+  background-color: rgba(241, 141, 101, 0.658);
+  border: 4px dotted hotpink;
   padding-left: 0.6rem;
   padding-right: 0.6rem;
-  border-radius: 0.5rem;
+  border-radius: 0.4rem;
+  padding-bottom: 0.4rem;
   cursor: pointer;
   font-weight: bold;
   margin-top: 0.5rem;
+  color: blanchedalmond;
   transition: transform 0.1s ease, box-shadow 0.3s ease;
-  color: rgba(99, 49, 2, 0.966);
   font-family: inherit;
-  border: 4px dotted hotpink;
 }
+
+
 
 .clear-cart-btn:hover, .remove-button:hover {
   transform: scale(1.07);
@@ -75,16 +82,16 @@
 }
 
 .remove-button{
-    background-color: lightpink;
+  color: blanchedalmond;
+  background-color: rgba(247, 158, 76, 0.226);
   padding-bottom: 0.3rem;
   padding-left: 0.6rem;
   padding-right: 0.6rem;
   border-radius: 0.5rem;
   cursor: pointer;
   font-weight: bold;
-  margin-top: 0.5rem;
+  margin-left: 4rem;
   transition: transform 0.1s ease, box-shadow 0.3s ease;
-  color: rgba(99, 49, 2, 0.966);
   font-family: inherit;
   border: 4px dotted hotpink;
 }

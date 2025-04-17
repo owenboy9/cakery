@@ -13,9 +13,8 @@ function LargeProductCard({
   const [quantity, setQuantity] = useState('');
 
   const handleBuyClick = () => {
-    const finalQuantity = Number(quantity) || 1;
-    onClickBuy({ name, image, price }, finalQuantity);
-
+    const finalQuantity = parseInt(quantity) || 1;
+    onClickBuy({ name, price}, finalQuantity);
   };
 
   return (
@@ -45,12 +44,15 @@ function LargeProductCard({
             value={quantity}
             onChange={(e) => {
               const val = e.target.value;
-              if (/^\d*$/.test(val)) setQuantity(val);
+              if (/^\d*$/.test(val)) {
+                setQuantity(val === "" ? "" : parseInt(val));
+              }
             }}
+
             placeholder="??"
             className="quantity-input"
           />
-          <p className="large-product-price">{price}</p>
+          <p className="large-product-price">$ {price}</p>
           <button className="large-product-buy-button" onClick={handleBuyClick}>
             buy!
           </button>

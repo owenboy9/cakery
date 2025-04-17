@@ -2,6 +2,7 @@ import { useCart } from '../context/CartContext';  // Import the useCart hook
 import Nav from './Nav.jsx';
 import logo from '../assets/logo.jpg';
 import '../styles/headerAndFooter.css';
+import { Link } from 'react-router-dom'; 
 
 function Header() {
   const { cartItems } = useCart();  // Access the cart items from context
@@ -13,9 +14,9 @@ function Header() {
     <header>
       <div className="header-container">
         <div className="logo-container">
-          <a href="/">
+          <Link to="/">
             <img className="logo" src={logo} alt="Logo" />
-          </a>
+          </Link>
         </div>
         <Nav />
       </div>

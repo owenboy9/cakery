@@ -11,7 +11,7 @@ function ProductCard({ name, image, price, onBuyClick, onImageClick }) {
       />
       <div className="product-content">
         <h3 className="product-name">{name}</h3>
-        <p className="product-price">{price}</p>
+        <p className="product-price">$ {price}</p>
         <button className="buy-button" onClick={onBuyClick}>
           buy one
         </button>
