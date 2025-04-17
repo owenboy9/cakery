@@ -11,10 +11,10 @@ function Cart() {
 
   return (
     <div className="cart-page">
-      <h2>Your Cart</h2>
+      <h2>your cart</h2>
 
       {cartItems.length === 0 ? (
-        <p>Your cart is empty. <Link to="/products">Go shop!</Link></p>
+        <p>Your cart is empty. <Link to="/products">go shop!</Link></p>
       ) : (
         <>
           <ul className="cart-list">
