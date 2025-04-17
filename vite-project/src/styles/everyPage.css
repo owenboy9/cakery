@@ -44,7 +44,7 @@ p{
 }
 
 .message {
-  height: 10rem;
+  height: 6rem;
   resize: vertical;
   text-align: center;         /* center horizontally */
   padding-top: 4rem;          /* center vertically by pushing down */

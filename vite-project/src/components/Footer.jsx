@@ -5,6 +5,8 @@ import facebooklogo from '../assets/facebook-logo.png';
 function Footer() {
   return (
     <footer className="footer">
+      <p>© 2025 sweet shop</p>
+      <div>
       <a 
         href="https://www.instagram.com/__.sweet_.shop/?hl=en" 
         target="_blank" 
@@ -19,7 +21,8 @@ function Footer() {
       >
         <img className='social-logo' src={facebooklogo} alt="facebook" />
       </a>
-      <p>© 2025 sweet shop</p>
+      </div>
+      
     </footer>
   );
 }
