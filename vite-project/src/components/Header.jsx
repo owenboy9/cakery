@@ -8,11 +8,11 @@ function Header() {
   return (
     <header>
     <div className='header-container'>
-      <a href="/">
-        <div className='logo-container'>
+      <div className='logo-container'>
+        <a href="/">
           <img className='logo' src={logo}/>
-        </div>
-      </a>
+        </a>
+      </div>
       <Nav />
     </div>
     </header>
