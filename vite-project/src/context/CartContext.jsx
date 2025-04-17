@@ -5,33 +5,48 @@ const CartContext = createContext();
 export function CartProvider({ children }) {
   const [cartItems, setCartItems] = useState([]);
 
-  const addToCart = (product) => {
+  const addToCart = (product, quantity = 1) => {
+    const numericQuantity = Number(quantity);
+    const numericPrice = Number(product.price);
+
     setCartItems(prev => {
-      const existing = prev.find(item => item.id === product.id);
+      const existing = prev.find(item => item.name === product.name);
       if (existing) {
         return prev.map(item =>
-          item.id === product.id ? { ...item, quantity: item.quantity + 1 } : item
+          item.name === product.name
+            ? { ...item, quantity: item.quantity + numericQuantity }
+            : item
         );
       } else {
-        return [...prev, { ...product, quantity: 1 }];
+        return [
+          ...prev,
+          {
+            ...product,
+            quantity: numericQuantity,
+            price: numericPrice, // ensure numeric
+          },
+        ];
       }
     });
   };
 
-  const removeFromCart = (id) => {
-    setCartItems(prev => prev.filter(item => item.id !== id));
+  const removeFromCart = (name) => {
+    setCartItems(prev => prev.filter(item => item.name !== name));
   };
 
   const clearCart = () => {
     setCartItems([]);
   };
 
-  const updateQuantity = (id, quantity) => {
-    setCartItems(prev =>
-      prev.map(item =>
-        item.id === id ? { ...item, quantity: Math.max(1, quantity) } : item
-      )
-    );
+  const updateQuantity = (name, quantity) => {
+    const num = Number(quantity);
+    if (!isNaN(num) && num > 0) {
+      setCartItems(prev =>
+        prev.map(item =>
+          item.name === name ? { ...item, quantity: num } : item
+        )
+      );
+    }
   };
 
   const getTotal = () => {
@@ -39,7 +54,16 @@ export function CartProvider({ children }) {
   };
 
   return (
-    <CartContext.Provider value={{ cartItems, addToCart, removeFromCart, clearCart, updateQuantity, getTotal }}>
+    <CartContext.Provider
+      value={{
+        cartItems,
+        addToCart,
+        removeFromCart,
+        clearCart,
+        updateQuantity,
+        getTotal,
+      }}
+    >
       {children}
     </CartContext.Provider>
   );

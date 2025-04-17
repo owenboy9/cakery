@@ -13,10 +13,8 @@ function Products() {
 
   const handleBuy = (product, quantity) => {
     addToCart({
-      id: product.id,
       name: product.name,
       price: product.price,
-      image: product.image,
       quantity: quantity,
     });
     console.log(`added ${quantity} ${product.name}(s) to cart`);

@@ -14,7 +14,8 @@ function LargeProductCard({
 
   const handleBuyClick = () => {
     const finalQuantity = Number(quantity) || 1;
-    onClickBuy(finalQuantity);
+    onClickBuy({ name, image, price }, finalQuantity);
+
   };
 
   return (
