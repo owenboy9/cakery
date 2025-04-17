@@ -15,19 +15,27 @@ function Contact() {
     console.log('Name:', name);
     console.log('Message:', message);
 
-    // show thank-you in the message field
-    setMessage('thank you for your message ♡');
-    setIsSubmitted(true);
-    setIsThankYou(true);
+    if (!email || !name || !message) {
+      alert('you have missed some fields here ♡');
+      return;
+    }
+    else{
+        // show thank-you in the message field
+      setMessage('thank you for your message\n♡');
+      setEmail('♡'); // clear email field
+      setName('♡'); // clear name field
+      setIsSubmitted(true);
+      setIsThankYou(true);
 
-    setTimeout(() => {
-      // clear fields again after 3s
-      setMessage('');
-      setIsSubmitted(false);
-      setIsThankYou(false);
-      setEmail('');
-      setName('');
-    }, 3000);
+      setTimeout(() => {
+        // clear fields again after 3s
+        setMessage('');
+        setIsSubmitted(false);
+        setIsThankYou(false);
+        setEmail('');
+        setName('');
+      }, 3000);
+    }
   };
 
   return (
@@ -37,14 +45,14 @@ function Contact() {
       <form onSubmit={submitForm} className="form-container">
         <input
           type="text"
-          className="email"
+          className={`email ${isSubmitted ? 'thank-you-style' : ''}`}
           placeholder="your email"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
         />
         <input
           type="text"
-          className="name"
+          className={`name ${isSubmitted ? 'thank-you-style' : ''}`}
           placeholder="your name"
           value={name}
           onChange={(e) => setName(e.target.value)}
