@@ -19,6 +19,10 @@
 
 .large-product-content {
   padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .large-product-name {
@@ -34,6 +38,7 @@
 
 .large-product-content p{
   color: blanchedalmond;
+  text-align: center;
 }
 
 .large-product-buy-button {
