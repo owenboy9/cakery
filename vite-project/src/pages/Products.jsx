@@ -4,13 +4,22 @@ import '../styles/products.css';
 import products from '../data/products';
 import ProductCard from '../components/ProductCard';
 import LargeProductCard from '../components/LargeProductCard';
+import { useCart } from '../context/CartContext';
 
 function Products() {
   const [selectedProduct, setSelectedProduct] = useState(null);
-  const [filterType, setFilterType] = useState(null); // default filter
+  const [filterType, setFilterType] = useState(null);
+  const { addToCart } = useCart();
 
-  const handleBuy = (productName, quantity) => {
-    console.log(`added ${quantity} ${productName}(s) to cart`);
+  const handleBuy = (product, quantity) => {
+    addToCart({
+      id: product.id,
+      name: product.name,
+      price: product.price,
+      image: product.image,
+      quantity: quantity,
+    });
+    console.log(`added ${quantity} ${product.name}(s) to cart`);
   };
 
   const handleImageClick = (product) => {
@@ -21,20 +30,18 @@ function Products() {
     setSelectedProduct(null);
   };
 
-  let displayedProducts;
+  let displayedProducts = [...products];
 
   if (filterType) {
-    displayedProducts = products
+    displayedProducts = displayedProducts
       .filter((product) => product.type === filterType)
       .sort((a, b) => a.name.localeCompare(b.name));
   } else {
-    displayedProducts = products.sort((a, b) => a.name.localeCompare(b.name)); // all products, no sort
+    displayedProducts = displayedProducts.sort((a, b) => a.name.localeCompare(b.name));
   }
-
 
   return (
     <div className="products-page">
-      {/* FILTER BUTTONS */}
       <div className="filter-buttons">
         <button
           className={filterType === 'cupcake' ? 'active' : ''}
@@ -49,27 +56,25 @@ function Products() {
           wedding cakes
         </button>
         <button
-          className={filterType === '' ? 'active' : ''}
-          onClick={() => setFilterType('')}
+          className={!filterType ? 'active' : ''}
+          onClick={() => setFilterType(null)}
         >
           all together
         </button>
       </div>
 
       <div className="products-container">
-        {/* PRODUCT GRID */}
         {displayedProducts.map((product) => (
           <ProductCard
             key={product.id}
             name={product.name}
             image={product.image}
             price={product.price}
-            onBuyClick={() => handleBuy(product.name, 1)}
+            onBuyClick={() => handleBuy(product, 1)}
             onImageClick={() => handleImageClick(product)}
           />
         ))}
 
-        {/* POPUP */}
         {selectedProduct && (
           <div className="popup-overlay" onClick={closePopup}>
             <div className="popup-content" onClick={(e) => e.stopPropagation()}>
@@ -81,7 +86,7 @@ function Products() {
                 description={selectedProduct.description}
                 bestPairedWith={selectedProduct.bestPairedWith}
                 onClickBuy={(quantity) =>
-                  handleBuy(selectedProduct.name, quantity)
+                  handleBuy(selectedProduct, quantity)
                 }
                 onClose={closePopup}
               />

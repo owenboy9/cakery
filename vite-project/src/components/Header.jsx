@@ -4,6 +4,7 @@ import Nav from './Nav.jsx'
 import logo from '../assets/logo.jpg'
 import '../styles/headerAndFooter.css'
 
+
 function Header() {
   return (
     <header>
