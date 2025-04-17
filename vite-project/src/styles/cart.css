@@ -10,7 +10,6 @@
   height: 9vh;
   border-radius: 50px;
   transition: background-color 1s;
-  box-shadow: 0px 0px 10px rgba(240, 121, 11, 0.5);
 }
 
 .cart-icon:hover {
@@ -20,14 +19,13 @@
 
 .cart-count {
   position: absolute;
-  top: -8px;
-  right: -8px;
-  background-color: red;
-  color: white;
+  top: -7px;
+  right: -3px;
+  color: rgb(241, 7, 78);
   border-radius: 50%;
   padding: 2px 6px;
-  font-size: 12px;
-  font-weight: bold;
+  font-size: 1rem;
+  font-weight: extra-bold;
 }
 
 .cart-page {
@@ -57,11 +55,36 @@
 }
 
 .clear-cart-btn {
-  margin-top: 1rem;
-  padding: 0.5rem 1rem;
-  background-color: crimson;
-  color: white;
-  border: none;
+  background-color: lightpink;
+  padding-bottom: 0.5rem;
+  padding-left: 0.6rem;
+  padding-right: 0.6rem;
+  border-radius: 0.5rem;
   cursor: pointer;
+  font-weight: bold;
+  margin-top: 0.5rem;
+  transition: transform 0.1s ease, box-shadow 0.3s ease;
+  color: rgba(99, 49, 2, 0.966);
+  font-family: inherit;
+  border: 4px dotted hotpink;
 }
 
+.clear-cart-btn:hover, .remove-button:hover {
+  transform: scale(1.07);
+  box-shadow: 0 0 10px rgb(240, 99, 141);
+}
+
+.remove-button{
+    background-color: lightpink;
+  padding-bottom: 0.3rem;
+  padding-left: 0.6rem;
+  padding-right: 0.6rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-weight: bold;
+  margin-top: 0.5rem;
+  transition: transform 0.1s ease, box-shadow 0.3s ease;
+  color: rgba(99, 49, 2, 0.966);
+  font-family: inherit;
+  border: 4px dotted hotpink;
+}

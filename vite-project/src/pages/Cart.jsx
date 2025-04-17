@@ -22,13 +22,13 @@ function Cart() {
               <li key={index} className="cart-item">
                 <span>{item.name} x {item.quantity}</span>
                 <span>${(item.price * item.quantity).toFixed(2)}</span>
-                <button onClick={() => removeFromCart(item.name)}>remove</button>
+                <button className="remove-button" onClick={() => removeFromCart(item.name)}>remove</button>
               </li>
             ))}
           </ul>
 
-          <p className="cart-total">Total: ${getTotal()}</p>
-          <button onClick={clearCart} className="clear-cart-btn">Clear Cart</button>
+          <p className="cart-total">total: ${getTotal()}</p>
+            <button onClick={clearCart} className="clear-cart-btn">empty cart</button>
         </>
       )}
     </div>
