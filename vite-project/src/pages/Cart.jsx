@@ -11,12 +11,16 @@ function Cart() {
 
   return (
     <div className="every-page-container">
-      <h2>your cart</h2>
-
       {cartItems.length === 0 ? (
-        <p>your cart is empty <Link to="/products">go shop!</Link></p>
+        <div className="empty-cart">
+          <h2>your cart is empty</h2>
+          <Link to="/products" className="go-shop">
+          go shop!
+          </Link>
+        </div>
       ) : (
         <>
+          <h1>your cart</h1>
           <ul className="cart-list">
             {cartItems.map((item, index) => (
               <li key={index} className="cart-item">

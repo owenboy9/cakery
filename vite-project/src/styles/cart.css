@@ -95,3 +95,20 @@
   font-family: inherit;
   border: 4px dotted hotpink;
 }
+
+.empty-cart {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.go-shop{
+  text-decoration: none;
+  color: rgba(99, 49, 2, 0.966);
+  transition: transform 0.1s ease, box-shadow 0.3s ease;
+}
+
+.go-shop:hover{
+  transform: scale(2);
+}
