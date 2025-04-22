@@ -1,7 +1,11 @@
+// vite.config.js
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 
+const isGithubPages = process.env.GITHUB_PAGES === 'true';
+
 export default defineConfig({
-  base: process.env.NODE_ENV === 'production' ? '/cakery/' : '/', // 👈 important for GitHub Pages
+  base: isGithubPages ? '/cakery/' : '/',
   plugins: [react()],
 });
+
