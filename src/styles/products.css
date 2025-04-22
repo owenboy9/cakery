@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+CU:wght@100..400&display=swap');
+
+.products-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 2rem;
+  padding-left: 0;
+  padding-right: 0;
+  background-color: lightpink;
+  width: 100%;
+}
+
+.products-page {
+  background-color: lightpink;
+}
+
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(253, 223, 189, 0.5); /* light pink overlay */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+  backdrop-filter: blur(5px);
+  padding: 4rem; /* Add padding to give breathing room */
+  box-sizing: border-box; /* Ensure padding doesn't cause overflow */
+  scroll-behavior: smooth; /* Smooth scrolling for the overlay */
+  overflow-y: visible; /* Allow scrolling if content overflows */
+}
+
+.popup-content::-webkit-scrollbar {
+  width: 8px;
+}
+
+.popup-content::-webkit-scrollbar-track {
+  background: transparent;
+  border-radius: 10px;
+}
+
+.popup-content::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 192, 203, 0.3); /* light transparent pink */
+  border-radius: 10px;
+  border: 2px solid transparent; /* space inside thumb */
+}
+
+.popup-content {
+  background: rgb(197, 36, 98);
+  border-radius: 1rem;
+  box-shadow: 0 0 20px rgba(214, 97, 132, 0.8);
+  border: 4px dotted hotpink;
+  max-height: 100%; /* Ensure it fits within viewport */
+  overflow-y: auto;
+  padding: 2rem;
+  overflow-x: hidden; /* Prevent horizontal overflow */
+    scrollbar-width: thin;
+  scrollbar-color: rgba(255, 192, 203, 0.3) transparent; 
+}
+
+.filter-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.filter-buttons button {
+  width: 10rem;
+  background-color: rgba(240, 19, 122, 0.5);
+  border: 4px dotted rgb(250, 129, 189);
+  padding: 0.5rem 1rem;
+  border-radius: 0.6rem;
+  cursor: pointer;
+  font-weight: bold;
+  color: blanchedalmond;
+  transition: transform 0.1s ease, box-shadow 0.3s ease;
+  margin-top: 2.5rem;
+  font-family: "Playwrite CU", cursive;
+}
+
+.filter-buttons button:hover {
+  transform: scale(1.07);
+  box-shadow: 0 0 10px rgb(240, 99, 141);
+}
+
+.products-page{
+  border: 4px dotted rgb(250, 129, 189);
+  }

@@ -1,0 +1,7 @@
+/* This is the main CSS file for the Vite project */
+#root {
+  width: 100%;
+  margin: 0;
+  padding: none;
+  text-align: center;
+}
