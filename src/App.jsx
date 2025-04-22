@@ -10,7 +10,7 @@ import Cart from './pages/Cart';
 function App() {
   return (
     <CartProvider> {/* <-- wrap everything */}
-      <Router>
+      <Router basename="/cakery">
         <Routes>
           <Route path="/" element={<Layout />}>
             <Route index element={<Home />} />
